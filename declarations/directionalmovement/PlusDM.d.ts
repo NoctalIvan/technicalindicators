@@ -11,5 +11,5 @@ export declare class PDM extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: PDMInput);
     static calculate(input: PDMInput): number[];
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }

@@ -46,7 +46,7 @@ export class WMA extends Indicator{
   static calculate = wma;
 
     //STEP 5. REMOVE GET RESULT FUNCTION
-  nextValue(price:number):number | undefined {
+  nextValue(price:any):number | undefined {
       var result = this.generator.next(price).value;
       if(result != undefined)
           return this.format(result);

@@ -12,7 +12,7 @@ export class SMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof sma;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function sma(input: MAInput): number[];
 
@@ -23,7 +23,7 @@ export class EMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof ema;
-    nextValue(price: number): number;
+    nextValue(price:any): number;
 }
 export function ema(input: MAInput): number[];
 
@@ -34,7 +34,7 @@ export class WMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof wma;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function wma(input: MAInput): number[];
 
@@ -45,7 +45,7 @@ export class WEMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof wema;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function wema(input: MAInput): number[];
 
@@ -69,7 +69,7 @@ export class MACD extends Indicator {
     generator: IterableIterator<MACDOutput | undefined>;
     constructor(input: MACDInput);
     static calculate: typeof macd;
-    nextValue(price: number): MACDOutput | undefined;
+    nextValue(price:any): MACDOutput | undefined;
 }
 export function macd(input: MACDInput): MACDOutput[];
 
@@ -81,7 +81,7 @@ export class RSI extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: RSIInput);
     static calculate: typeof rsi;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function rsi(input: RSIInput): number[];
 
@@ -100,7 +100,7 @@ export class BollingerBands extends Indicator {
     generator: IterableIterator<BollingerBandsOutput | undefined>;
     constructor(input: BollingerBandsInput);
     static calculate: typeof bollingerbands;
-    nextValue(price: number): BollingerBandsOutput | undefined;
+    nextValue(price:any): BollingerBandsOutput | undefined;
 }
 export function bollingerbands(input: BollingerBandsInput): BollingerBandsOutput[];
 
@@ -114,7 +114,7 @@ export class ADX extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: ADXInput);
     static calculate: typeof adx;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function adx(input: ADXInput): number[];
 
@@ -129,7 +129,7 @@ export class ATR extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: ATRInput);
     static calculate: typeof atr;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function atr(input: ATRInput): number[];
 
@@ -156,7 +156,7 @@ export class ROC extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: ROCInput);
     static calculate: typeof roc;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function roc(input: ROCInput): number[];
 
@@ -181,7 +181,7 @@ export class KST extends Indicator {
     generator: IterableIterator<KSTOutput | undefined>;
     constructor(input: KSTInput);
     static calculate: typeof kst;
-    nextValue(price: number): KSTOutput;
+    nextValue(price:any): KSTOutput;
 }
 export function kst(input: KSTInput): KSTOutput[];
 
@@ -216,7 +216,7 @@ export class WilliamsR extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: WilliamsRInput);
     static calculate: typeof williamsr;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function williamsr(input: WilliamsRInput): number[];
 
@@ -255,7 +255,7 @@ export class TRIX extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: TRIXInput);
     static calculate: typeof trix;
-    nextValue(price: number): number;
+    nextValue(price:any): number;
 }
 export function trix(input: TRIXInput): number[];
 
@@ -267,7 +267,7 @@ export class AverageGain extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: AvgGainInput);
     static calculate: typeof averagegain;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function averagegain(input: AvgGainInput): number[];
 
@@ -279,7 +279,7 @@ export class AverageLoss extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: AvgLossInput);
     static calculate: typeof averageloss;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function averageloss(input: AvgLossInput): number[];
 
@@ -291,7 +291,7 @@ export class SD extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: SDInput);
     static calculate: typeof sd;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export function sd(input: SDInput): number[];
 

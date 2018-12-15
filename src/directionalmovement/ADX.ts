@@ -106,7 +106,7 @@ ADXOutput
 
   static calculate = adx;
 
-  nextValue(price:number):ADXOutput | undefined {
+  nextValue(price:any):ADXOutput | undefined {
       let result = this.generator.next(price).value;
       if(result != undefined && result.adx != undefined) {
         return { adx : this.format(result.adx), pdi : this.format(result.pdi), mdi : this.format(result.mdi) };

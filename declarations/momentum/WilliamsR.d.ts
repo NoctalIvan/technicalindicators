@@ -10,6 +10,6 @@ export declare class WilliamsR extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: WilliamsRInput);
     static calculate: typeof williamsr;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function williamsr(input: WilliamsRInput): number[];

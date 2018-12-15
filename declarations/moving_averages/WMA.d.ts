@@ -7,6 +7,6 @@ export declare class WMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof wma;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function wma(input: MAInput): number[];

@@ -49,7 +49,7 @@ export class WEMA extends Indicator{
 
     static calculate = wema;
 
-    nextValue(price:number):number | undefined {
+    nextValue(price:any):number | undefined {
         var result = this.generator.next(price).value;
         if(result!=undefined)
             return this.format(result);

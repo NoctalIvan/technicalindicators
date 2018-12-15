@@ -56,7 +56,7 @@ export class AverageGain extends Indicator {
 
   static calculate = averagegain;
 
-    nextValue(price:number):number | undefined {
+    nextValue(price:any):number | undefined {
         return this.generator.next(price).value;
     };
 }

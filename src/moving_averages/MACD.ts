@@ -76,7 +76,7 @@ export class MACD extends Indicator{
 
     static calculate=macd;
 
-    nextValue(price:number):MACDOutput | undefined {
+    nextValue(price:any):MACDOutput | undefined {
         var result = this.generator.next(price).value;
         return result;
     };

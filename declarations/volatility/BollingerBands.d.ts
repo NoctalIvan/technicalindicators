@@ -14,6 +14,6 @@ export declare class BollingerBands extends Indicator {
     generator: IterableIterator<BollingerBandsOutput | undefined>;
     constructor(input: BollingerBandsInput);
     static calculate: typeof bollingerbands;
-    nextValue(price: number): BollingerBandsOutput | undefined;
+    nextValue(price:any): BollingerBandsOutput | undefined;
 }
 export declare function bollingerbands(input: BollingerBandsInput): BollingerBandsOutput[];

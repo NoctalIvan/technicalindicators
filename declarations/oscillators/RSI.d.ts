@@ -10,6 +10,6 @@ export declare class RSI extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: RSIInput);
     static calculate: typeof rsi;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function rsi(input: RSIInput): number[];

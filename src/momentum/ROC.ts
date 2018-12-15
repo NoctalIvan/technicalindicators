@@ -43,7 +43,7 @@ export class ROC extends Indicator {
 
    static calculate = roc;
 
-    nextValue(price:number):number | undefined {
+    nextValue(price:any):number | undefined {
         var nextResult = this.generator.next(price);
         if(nextResult.value != undefined && (!isNaN(nextResult.value))) {
           return this.format(nextResult.value);

@@ -8,5 +8,5 @@ export declare class MDM extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MDMInput);
     static calculate(input: MDMInput): number[];
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }

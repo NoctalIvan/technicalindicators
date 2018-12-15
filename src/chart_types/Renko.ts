@@ -107,7 +107,7 @@ class Renko extends Indicator{
 
     static calculate=renko;
 
-    nextValue(price:number):CandleList | undefined {
+    nextValue(price:any):CandleList | undefined {
         console.error('Cannot calculate next value on Renko, Every value has to be recomputed for every change, use calcualte method');
         return null;
     };

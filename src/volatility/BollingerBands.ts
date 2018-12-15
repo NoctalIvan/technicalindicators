@@ -68,7 +68,7 @@ export class BollingerBands extends Indicator {
 
     static calculate = bollingerbands;
 
-    nextValue(price:number):BollingerBandsOutput | undefined {
+    nextValue(price:any):BollingerBandsOutput | undefined {
         return this.generator.next(price).value;
     };
 }

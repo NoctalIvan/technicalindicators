@@ -60,7 +60,7 @@ export class RSI extends Indicator {
 
   static calculate = rsi;
 
-    nextValue(price:number):number | undefined {
+    nextValue(price:any):number | undefined {
         return this.generator.next(price).value;
     };
 }

@@ -7,6 +7,6 @@ export declare class Sum extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: SumInput);
     static calculate: typeof sum;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function sum(input: SumInput): number[];

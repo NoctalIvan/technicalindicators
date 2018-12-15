@@ -7,6 +7,6 @@ export declare class Highest extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: HighestInput);
     static calculate: typeof highest;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function highest(input: HighestInput): number[];

@@ -15,6 +15,6 @@ export declare class ADX extends Indicator {
     generator: IterableIterator<ADXOutput | undefined>;
     constructor(input: ADXInput);
     static calculate: typeof adx;
-    nextValue(price: number): ADXOutput | undefined;
+    nextValue(price:any): ADXOutput | undefined;
 }
 export declare function adx(input: ADXInput): ADXOutput[];

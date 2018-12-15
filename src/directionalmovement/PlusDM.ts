@@ -59,7 +59,7 @@ export class PDM extends Indicator {
         return result;
     };
 
-    nextValue(price:number):number | undefined {
+    nextValue(price:any):number | undefined {
         return this.generator.next(price).value;
     };
 

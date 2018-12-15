@@ -8,6 +8,6 @@ export declare class ROC extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: ROCInput);
     static calculate: typeof roc;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function roc(input: ROCInput): number[];

@@ -51,7 +51,7 @@ export class TRIX extends Indicator {
     
     static calculate=trix;
 
-    nextValue(price:number) {
+    nextValue(price:any) {
       let nextResult = this.generator.next(price);
       if(nextResult.value !== undefined)
         return nextResult.value;

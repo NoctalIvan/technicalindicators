@@ -54,7 +54,7 @@ export class AverageLoss extends Indicator {
 
   static calculate = averageloss;
 
-    nextValue(price:number):number | undefined {
+    nextValue(price:any):number | undefined {
         return this.generator.next(price).value;
     };
 } 

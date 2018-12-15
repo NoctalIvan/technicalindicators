@@ -18,7 +18,7 @@ declare class EMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof ema;
-    nextValue(price: number): number;
+    nextValue(price:any): number;
 }
 declare function ema(input: MAInput): number[];
 declare class IndicatorInput {
@@ -56,7 +56,7 @@ declare class SMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof sma;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 declare function sma(input: MAInput): number[];
 declare class LinkedList {
@@ -123,7 +123,7 @@ declare class AverageGain extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: AvgGainInput);
     static calculate: typeof averagegain;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 declare function averagegain(input: AvgGainInput): number[];
 declare class AvgLossInput extends IndicatorInput {
@@ -134,7 +134,7 @@ declare class AverageLoss extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: AvgLossInput);
     static calculate: typeof averageloss;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 declare function averageloss(input: AvgLossInput): number[];
 /**
@@ -187,7 +187,7 @@ declare class ATR extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: ATRInput);
     static calculate: typeof atr;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 declare function atr(input: ATRInput): number[];
 declare class WEMA extends Indicator {
@@ -197,7 +197,7 @@ declare class WEMA extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof wema;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 declare function wema(input: MAInput): number[];
 declare class TrueRangeInput extends IndicatorInput {

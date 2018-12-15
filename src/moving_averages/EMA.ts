@@ -49,7 +49,7 @@ export class EMA extends Indicator{
 
     static calculate = ema;
 
-    nextValue(price:number) {
+    nextValue(price:any) {
         var result = this.generator.next(price).value;
         if(result != undefined)
             return this.format(result);

@@ -7,6 +7,6 @@ export declare class SD extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: SDInput);
     static calculate: typeof sd;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function sd(input: SDInput): number[];

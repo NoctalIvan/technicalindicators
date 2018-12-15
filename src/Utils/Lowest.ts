@@ -46,7 +46,7 @@ export class Lowest extends Indicator {
 
   static calculate = lowest;
 
-  nextValue(price:number):number | undefined {
+  nextValue(price:any):number | undefined {
      var result =  this.generator.next(price);
      if(result.value != undefined){
         return result.value;

@@ -7,6 +7,6 @@ export declare class WilderSmoothing extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: MAInput);
     static calculate: typeof wildersmoothing;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function wildersmoothing(input: MAInput): number[];

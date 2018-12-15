@@ -7,6 +7,6 @@ export declare class Lowest extends Indicator {
     generator: IterableIterator<number | undefined>;
     constructor(input: LowestInput);
     static calculate: typeof lowest;
-    nextValue(price: number): number | undefined;
+    nextValue(price:any): number | undefined;
 }
 export declare function lowest(input: LowestInput): number[];
