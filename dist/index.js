@@ -3907,31 +3907,6 @@ function loadModel() {
         laodingModel = true;
         loadingPromise = new Promise(function (resolve, reject) {
             return __awaiter(this, void 0, void 0, function* () {
-                if (isNodeEnvironment) {
-                    tf = require('@tensorflow/tfjs');
-                    console.log('Nodejs Environment detected ');
-                    var tfnode = require('@tensorflow/tfjs-node');
-                    var modelPath = require('path').resolve(__dirname, '../tf_model/model.json');
-                    model = yield tf.loadModel(tfnode.io.fileSystem(modelPath));
-                }
-                else {
-                    if (typeof window.tf == "undefined") {
-                        modelLoaded = false;
-                        laodingModel = false;
-                        console.log('Tensorflow js not imported, pattern detection may not work');
-                        resolve();
-                        return;
-                    }
-                    tf = window.tf;
-                    console.log('Browser Environment detected ', tf);
-                    console.log('Loading model ....');
-                    model = yield tf.loadModel('/tf_model/model.json');
-                    modelLoaded = true;
-                    laodingModel = false;
-                    setTimeout(resolve, 1000);
-                    console.log('Loaded model');
-                    return;
-                }
                 modelLoaded = true;
                 laodingModel = false;
                 resolve();
